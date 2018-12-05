@@ -1,0 +1,14 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+
+  <p>INGRESE SU NOMBRE</p>
+<input #box (keyup.enter)="update(box.value)" placeholder="NOMBRE">
+<p>
+  <button (click)="enviarDatosServidor()">ENVIAR DATOS!</button>{{clickMessage}}
+</p>
+
+<input type="file" #fileInput id="foto" >
+<img (click)="hola()" class="rounded-circle col-12">
+ </div>
+
+<router-outlet></router-outlet>
